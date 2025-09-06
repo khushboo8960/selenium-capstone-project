@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Selenium Capstone Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="All Modules(failed)">
+    <classes>
+      <class name="tests.CartTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyProductDetailsInCart"/>
+        </methods>
+      </class> <!-- tests.CartTests -->
+      <class name="tests.UITests">
+        <methods>
+          <include name="verifyLoginPageUIElements"/>
+          <include name="verifyBackButtonAfterLogout"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyPageTitleAndLogoConsistency"/>
+          <include name="verifyFooterLinks"/>
+        </methods>
+      </class> <!-- tests.UITests -->
+      <class name="tests.CheckoutTests">
+        <methods>
+          <include name="cancelCheckout"/>
+          <include name="checkoutWithValidDetails"/>
+          <include name="checkoutWithMissingLastName"/>
+          <include name="tearDown"/>
+          <include name="invalidZipCodeFormat"/>
+          <include name="finishButtonCompletesOrder"/>
+          <include name="verifySuccessMessageAfterOrder"/>
+          <include name="setUp"/>
+          <include name="checkoutWithMissingFirstName"/>
+          <include name="checkoutWithMissingPostalCode"/>
+          <include name="verifyCheckoutOverviewPage"/>
+          <include name="verifyBackToProductsButtonWorks"/>
+        </methods>
+      </class> <!-- tests.CheckoutTests -->
+      <class name="tests.MenuTests">
+        <methods>
+          <include name="verifyResetAppState"/>
+          <include name="setUp"/>
+          <include name="verifyUserCanLogout"/>
+          <include name="verifyAllMenuOptionsVisible"/>
+          <include name="tearDown"/>
+          <include name="verifyAboutLink"/>
+        </methods>
+      </class> <!-- tests.MenuTests -->
+    </classes>
+  </test> <!-- All Modules(failed) -->
+</suite> <!-- Failed suite [Selenium Capstone Suite] -->
